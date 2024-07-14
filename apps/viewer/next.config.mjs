@@ -62,7 +62,7 @@ const nextConfig = {
     '@typebot.io/schemas',
     '@typebot.io/emails',
   ],
-  output: 'standalone',
+  output: 'export',
   experimental: {
     outputFileTracingRoot: join(__dirname, '../../'),
     serverComponentsExternalPackages: ['isolated-vm'],
@@ -75,15 +75,15 @@ const nextConfig = {
     config.resolve.alias['isolated-vm'] = false
     return config
   },
-  async redirects() {
-    return [
-      {
-        source: '/discord',
-        destination: 'https://discord.gg/xjyQczWAXV',
-        permanent: true,
-      },
-    ]
-  },
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: '/discord',
+  //       destination: 'https://discord.gg/xjyQczWAXV',
+  //       permanent: true,
+  //     },
+  //   ]
+  // },
   async rewrites() {
     return {
       beforeFiles: (process.env.LANDING_PAGE_URL
