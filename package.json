@@ -27,7 +27,7 @@
     "create-new-block": "cd packages/forge/cli && pnpm start",
     "format:check": "turbo run format:check",
     "patch-embed-libs": "bun scripts/patch-embed-libs.ts",
-    "start": "pnpm start"
+    "start": "cd apps/viewer && pnpm start"
   },
   "devDependencies": {
     "@tolgee/cli": "1.3.2",
