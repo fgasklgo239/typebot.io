@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "dotenv -e ./.env -e ../../.env  -- next dev -p 3001",
     "build": "dotenv -e ./.env -e ../../.env -- next build",
-    "start": "next start",
+    "start": "next build && next start",
     "lint": "dotenv -e ./.env -e ../../.env -- next lint",
     "format:check": "prettier --check ./src --ignore-path ../../.prettierignore",
     "test": "dotenv -e ./.env -e ../../.env -- pnpm playwright test",
