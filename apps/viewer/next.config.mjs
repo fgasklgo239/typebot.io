@@ -2,7 +2,7 @@ import { withSentryConfig } from '@sentry/nextjs'
 import { join, dirname } from 'path'
 // import '@typebot.io/env/dist/env.mjs'
 import { fileURLToPath } from 'url'
-import { configureRuntimeEnv } from 'next-runtime-env/build/configure.js'
+// import { configureRuntimeEnv } from 'next-runtime-env/build/configure.js'
 
 const __filename = fileURLToPath(import.meta.url)
 
@@ -27,7 +27,7 @@ const __dirname = dirname(__filename)
 
 // injectViewerUrlIfVercelPreview(process.env.NEXT_PUBLIC_VIEWER_URL)
 
-configureRuntimeEnv()
+// configureRuntimeEnv()
 
 const landingPagePaths = [
   '/',
