@@ -26,7 +26,8 @@
     "locales:sync": "tolgee sync './apps/builder/src/**/*.ts?(x)' --continue-on-warning --remove-unused",
     "create-new-block": "cd packages/forge/cli && pnpm start",
     "format:check": "turbo run format:check",
-    "patch-embed-libs": "bun scripts/patch-embed-libs.ts"
+    "patch-embed-libs": "bun scripts/patch-embed-libs.ts",
+    "start": "next start -p $PORT"
   },
   "devDependencies": {
     "@tolgee/cli": "1.3.2",
