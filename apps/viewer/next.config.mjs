@@ -56,6 +56,8 @@ const optionalQueryParams = `(\\/?\\?.*)?`
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  distDir: 'dist',
   reactStrictMode: true,
   transpilePackages: [
     '@typebot.io/lib',
